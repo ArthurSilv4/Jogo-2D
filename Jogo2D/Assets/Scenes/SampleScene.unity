@@ -415,6 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 1982571098}
+  player: {fileID: 1869459119}
 --- !u!1 &1737466789
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ArmaControle : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private Transform player;
 
     void Update()
     {
@@ -18,5 +19,17 @@ public class ArmaControle : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, angle);
 
         sprite.flipY = (mousePosition.x < screenPoint.x);
+
+        if (Input.GetKeyDown(KeyCode.Mouse1) && sprite.flipY == true)
+        {
+            player.transform.localScale = ControlePlayer.olhandoEsquerda;
+            transform.localScale = ControlePlayer.olhandoEsquerda;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1) && sprite.flipY == false)
+        {
+            player.transform.localScale = ControlePlayer.olhandoDireita;
+            transform.localScale = ControlePlayer.olhandoDireita;
+        }
     }
 }

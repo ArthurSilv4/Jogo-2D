@@ -34,7 +34,7 @@ public class ControlePlayer : MonoBehaviour
         miraEsuerda = spawnBala.gameObject.transform.rotation;
         miraEsuerda.z = 170;
 
-        tempoAtualTiro = 1.5f;
+        tempoAtualTiro = 0.9f;
 
         rig.GetComponent<Rigidbody2D>();
         anin.GetComponent<Animator>();
