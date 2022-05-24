@@ -7,6 +7,7 @@ public class ControlePlayer : MonoBehaviour
     public Animator anin;
     public Rigidbody2D rig;
 
+    [SerializeField] private Transform armaAux;
     [SerializeField] private GameObject bala;
     [SerializeField] private Transform spawnBala;
 
@@ -20,8 +21,8 @@ public class ControlePlayer : MonoBehaviour
     private Quaternion miraDireita;
     private Quaternion miraEsuerda;
 
-    private Vector3 olhandoDireita;
-    private Vector3 olhandoEsquerda;
+    public static Vector3 olhandoDireita;
+    public static Vector3 olhandoEsquerda;
 
     void Start()
     {
@@ -60,12 +61,14 @@ public class ControlePlayer : MonoBehaviour
         {
             spawnBala.transform.localRotation = miraDireita;
 
+            armaAux.transform.localScale = olhandoDireita;
             transform.localScale = olhandoDireita;
         }
         if (Input.GetAxisRaw("Horizontal") < 0) //Olhando esquerda
         {
             spawnBala.transform.localRotation = miraEsuerda;
 
+            armaAux.transform.localScale = olhandoEsquerda;
             transform.localScale = olhandoEsquerda;
         }
     }
