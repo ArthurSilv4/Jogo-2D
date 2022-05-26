@@ -56,6 +56,9 @@ TagManager:
   - name: Bala
     uniqueID: 1849546753
     locked: 0
+  - name: Inimigo
+    uniqueID: 3735254427
+    locked: 0
   - name: UI
     uniqueID: 3878548469
     locked: 0
