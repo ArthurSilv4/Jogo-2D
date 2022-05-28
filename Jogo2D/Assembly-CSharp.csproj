@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Ui\XpUI.cs" />
     <Compile Include="Assets\Scripts\Player\Arma\ArmaControle.cs" />
     <Compile Include="Assets\Scripts\Player\VidaPlayer.cs" />
     <Compile Include="Assets\Scripts\Inimigo\Inimigo.cs" />
@@ -63,7 +64,9 @@
     <Compile Include="Assets\sprite muzzle flashes\AnimatedTexture.cs" />
     <Compile Include="Assets\Scripts\Player\ControlePlayer.cs" />
     <Compile Include="Assets\Scripts\Ui\VidaUI.cs" />
-    <Compile Include="Assets\Scripts\Ui\XpUI.cs" />
+    <Compile Include="Assets\Scripts\Player\XpPlayer.cs" />
+    <Compile Include="Assets\Scripts\Inimigo\VidaInimigo.cs" />
+    <Compile Include="Assets\Scripts\Ui\Cronometro.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -90,7 +93,6 @@
     <None Include="Assets\SimplePixelUI\fonts\Font1\readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\SimplePixelUI\fonts\Font2\readme.txt" />
-    <None Include="Assets\Tech Dungeon Roguelite - Asset Pack (DEMO)\NPC\6x3 Cells.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

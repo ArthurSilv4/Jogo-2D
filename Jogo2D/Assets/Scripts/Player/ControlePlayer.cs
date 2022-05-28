@@ -94,7 +94,7 @@ public class ControlePlayer : MonoBehaviour
 
         if (deleiAtirar > 0)
         {
-            deleiAtirar -= 1 * Time.deltaTime;
+            deleiAtirar -=  Time.deltaTime;
         }
     }
 

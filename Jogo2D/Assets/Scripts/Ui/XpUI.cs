@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class XpUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Image xp;
+    [SerializeField] private float velocidade;
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-        
+        float porcentagemXp = (float)XpPlayer.currenteXp / XpPlayer.maxXp;
+        xp.fillAmount = Mathf.Lerp(xp.fillAmount, porcentagemXp, Time.deltaTime * velocidade);
     }
 }
