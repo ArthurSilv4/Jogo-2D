@@ -54,7 +54,7 @@ public class ArmaControle : MonoBehaviour
         switch (XpPlayer.nivelAtual)
         {
             case 1:
-                penteTotal = 5;
+                penteTotal = 50;
                 break;
         }
             

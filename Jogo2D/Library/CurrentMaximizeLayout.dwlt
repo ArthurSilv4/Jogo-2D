@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 33466
+  controlID: 1804
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 342}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 33467
+  controlID: 1777
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -364,9 +364,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 993b494f1fd9b924a907428d80d49089, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 2091db4eee189f5479fe08144b3c1082, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -8450132806578695826, guid: 993b494f1fd9b924a907428d80d49089, type: 2}
+  - m_Target: {fileID: -3297735947071396325, guid: 2091db4eee189f5479fe08144b3c1082, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 33413
+  controlID: 1697
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -511,7 +511,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7af0ffffa2f6ffff68f7ffffaef7ffff40f8ffff5af8ffff6ef9ffff3efbffffd041000040420000de6e0000366f0000706f0000a66f0000f06f0000
+      m_ExpandedIDs: 3efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -600,22 +600,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animacao/Tiro
+    - Assets/Scripts/Player
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Animacao/Tiro
+  - Assets/Scripts/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\arthu\OneDrive\Documentos\GitHub\Jogo-2D\Jogo2D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a0bd0000
-    m_LastClickedID: 48544
-    m_ExpandedIDs: 0000000016440000184400001a4400001c4400002044000000ca9a3b
+    m_SelectedIDs: 86470000
+    m_LastClickedID: 18310
+    m_ExpandedIDs: 000000004a4400004c4400004e440000504400005a44000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -643,7 +643,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000016440000184400001a4400001c44000000ca9a3b
+    m_ExpandedIDs: 000000004a4400004c4400004e4400005044000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -668,9 +668,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ea1dfeff
-    m_LastClickedInstanceID: -123414
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 72420000
+    m_LastClickedInstanceID: 17010
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000da510000b867000078430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -782,8 +782,8 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -123414
-  m_LastVerticalScrollValue: 0
+  m_LastInspectedObjectInstanceID: 17010
+  m_LastVerticalScrollValue: 360
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
