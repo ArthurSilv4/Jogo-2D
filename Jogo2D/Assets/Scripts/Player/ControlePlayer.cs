@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ControlePlayer : MonoBehaviour
 {
+    public Animator armaAnin;
+
     public Animator anin;
     public Rigidbody2D rig;
 
@@ -34,7 +36,7 @@ public class ControlePlayer : MonoBehaviour
         miraEsuerda = spawnBala.gameObject.transform.rotation;
         miraEsuerda.z = 170;
 
-        tempoAtualTiro = 0.9f;
+        tempoAtualTiro = 0.85f;
 
         rig.GetComponent<Rigidbody2D>();
         anin.GetComponent<Animator>();
@@ -48,6 +50,7 @@ public class ControlePlayer : MonoBehaviour
         Animacao();
         Rotacao();
         Atirar();
+        StartCoroutine(Recarregar());
     }
 
     private void FixedUpdate()
@@ -73,15 +76,31 @@ public class ControlePlayer : MonoBehaviour
         }
     }
 
+    IEnumerator Recarregar()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (ArmaControle.municaoAtual != ArmaControle.penteTotal)
+            {
+                yield return new WaitForSeconds(0.5f);
+                ArmaControle.municaoAtual = ArmaControle.penteTotal;
+            }
+        }
+    }
+
     void Atirar()
     {
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            if (deleiAtirar <= 0)
+            if (deleiAtirar <= 0 && ArmaControle.municaoAtual > 0)
             {
+                armaAnin.SetTrigger("Fire");
+
                 anin.SetBool("Atirando", true);
 
                 deleiAtirar = tempoAtualTiro;
+
+                ArmaControle.municaoAtual--;
 
                 Instantiate(bala, spawnBala.position, spawnBala.rotation);
             }
@@ -89,7 +108,6 @@ public class ControlePlayer : MonoBehaviour
         else
         {
             anin.SetBool("Atirando", false);
-
         }
 
         if (deleiAtirar > 0)

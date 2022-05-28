@@ -1,14 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ArmaControle : MonoBehaviour
 {
+    public Text txtPente;
+    public Text txtMunicaoAtual;
+
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private Transform player;
 
+    public static int  municaoAtual;
+    public static int penteTotal;
+
     void Update()
     {
+        NivelArma();
+        ExibirUI();
+
         Vector3 mousePosition = Input.mousePosition;
         Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
 
@@ -31,5 +41,22 @@ public class ArmaControle : MonoBehaviour
             player.transform.localScale = ControlePlayer.olhandoDireita;
             transform.localScale = ControlePlayer.olhandoDireita;
         }
+    }
+
+    void ExibirUI()
+    {
+        txtPente.text = penteTotal.ToString("00");
+        txtMunicaoAtual.text = municaoAtual.ToString("00");
+    }
+
+    void NivelArma()
+    {
+        switch (XpPlayer.nivelAtual)
+        {
+            case 1:
+                penteTotal = 5;
+                break;
+        }
+            
     }
 }

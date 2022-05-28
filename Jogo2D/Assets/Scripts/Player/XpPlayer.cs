@@ -4,7 +4,24 @@ using UnityEngine;
 
 public class XpPlayer : MonoBehaviour
 {
-   public static int currenteXp = 10;
-   public static int maxXp = 2;
 
+    public static int currenteXp;
+    public static int maxXp;
+
+    public static int nivelAtual;
+
+    private void Start()
+    {
+        maxXp = 10;
+        currenteXp = maxXp;
+    }
+
+    private void FixedUpdate()
+    {
+        if(currenteXp == maxXp)
+        {
+            nivelAtual++;
+            currenteXp = 0;
+        }
+    }
 }
