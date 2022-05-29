@@ -18,7 +18,7 @@ public class XpPlayer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(currenteXp == maxXp)
+        if(currenteXp >= maxXp)
         {
             nivelAtual++;
             currenteXp = 0;

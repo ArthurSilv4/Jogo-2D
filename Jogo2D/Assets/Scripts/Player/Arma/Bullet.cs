@@ -50,7 +50,7 @@ public class Bullet : MonoBehaviour
         switch (XpPlayer.nivelAtual)
         {
             case 1:
-                dano = 5;
+                dano = 50;
                 break;
         }
     }

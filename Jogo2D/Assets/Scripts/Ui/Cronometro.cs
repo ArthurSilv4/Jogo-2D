@@ -7,6 +7,9 @@ public class Cronometro : MonoBehaviour
 {
     public Text Textsegundos;
     public Text Textminutos;
+    public Text TextPontos;
+
+    public static float pontos;
 
     private int minutos;
     private int limiteSegundos;
@@ -21,6 +24,8 @@ public class Cronometro : MonoBehaviour
     {
         Textsegundos.text = segundos.ToString("00");
         Textminutos.text = minutos.ToString("00");
+
+        TextPontos.text = pontos.ToString("0");
 
         segundos += Time.deltaTime;
 

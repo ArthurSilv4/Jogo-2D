@@ -11,7 +11,7 @@ public class ArmaControle : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private Transform player;
 
-    public static int  municaoAtual;
+    public static int municaoAtual;
     public static int penteTotal;
 
     void Update()
@@ -54,6 +54,9 @@ public class ArmaControle : MonoBehaviour
         switch (XpPlayer.nivelAtual)
         {
             case 1:
+                penteTotal = 50;
+                break;
+            case 2:
                 penteTotal = 50;
                 break;
         }

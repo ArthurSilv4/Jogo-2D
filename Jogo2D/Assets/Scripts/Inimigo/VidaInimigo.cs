@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class VidaInimigo : MonoBehaviour
 {
+    public GameObject spritXp;
+
     public static int maxVida;
     public static int currenteVida;
 
     private void Start()
     {
-        maxVida = 50;
         currenteVida = maxVida;
+    }
+
+    public void Update()
+    {
+        NivelVida();
     }
 
     public void ReceberDano(int dano)
@@ -20,6 +26,10 @@ public class VidaInimigo : MonoBehaviour
         if (currenteVida <= 0)
         {
             Destroy(this.gameObject);
+
+            Instantiate(spritXp, this.transform.position, this.transform.rotation);
+
+            Cronometro.pontos += 7.4f;
         }
     }
 
@@ -28,6 +38,9 @@ public class VidaInimigo : MonoBehaviour
         switch (XpPlayer.nivelAtual)
         {
             case 1:
+                maxVida = 50;
+                break;
+            case 2:
                 maxVida = 50;
                 break;
         }

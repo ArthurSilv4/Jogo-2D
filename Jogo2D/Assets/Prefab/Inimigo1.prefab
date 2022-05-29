@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7066956222720860920}
   - component: {fileID: 7066956222720860903}
   - component: {fileID: 7066956222720860925}
+  - component: {fileID: 2817467539616626920}
   m_Layer: 0
   m_Name: Inimigo1
   m_TagString: Inimigo
@@ -122,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posicaoPlayer: {fileID: 0}
   velocidade: 3
+  inimigo: {fileID: 7066956222720860924}
 --- !u!114 &7066956222720860920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0581fe8dbd7c30f4c8e972ca60513a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spritXp: {fileID: 3904033067797739671, guid: 8779d2f04549ab845b0a8ffc87f03ec5, type: 3}
 --- !u!70 &7066956222720860903
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -166,3 +169,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 2, y: 3}
   m_Direction: 0
+--- !u!95 &2817467539616626920
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7066956222720860926}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3726597f2481bc2449d0cd3296aa3f7b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
