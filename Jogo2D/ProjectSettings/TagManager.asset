@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Vida
   - Inimigo
+  - Dentro
   layers:
   - Default
   - TransparentFX

@@ -67,6 +67,7 @@
     <Compile Include="Assets\sprite muzzle flashes\AnimatedTexture.cs" />
     <Compile Include="Assets\Scripts\Player\ControlePlayer.cs" />
     <Compile Include="Assets\Scripts\Ui\VidaUI.cs" />
+    <Compile Include="Assets\Scripts\Inimigo\Spawninimigo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

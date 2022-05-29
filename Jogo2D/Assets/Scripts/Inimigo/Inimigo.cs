@@ -24,7 +24,7 @@ public class Inimigo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            print("oi");
+            print("Colidiu Plauer");
         }
     }
 }

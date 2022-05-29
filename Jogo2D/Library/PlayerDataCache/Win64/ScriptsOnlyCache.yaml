@@ -20,13 +20,10 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -51,6 +48,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -91,6 +89,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 632}
     - Class: 114
       Script: {instanceID: 1464}
+    - Class: 114
+      Script: {instanceID: 1466}
     - Class: 114
       Script: {instanceID: 1718}
     - Class: 114
@@ -280,7 +280,7 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: a8d5f691214f1667d2dd38f6ba0229c9
+      Hash: b58f8d7c7160719be5142af9982b6aa9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: XpUI
@@ -304,7 +304,7 @@ ScriptsOnlyBuild:
     className: CinemachineCameraOffset
   - hash:
       serializedVersion: 2
-      Hash: d0fa94056d1498a66c35abf6c560b3e6
+      Hash: deb661b7d216786d8970a44ec69ceeff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ArmaControle
@@ -814,7 +814,7 @@ ScriptsOnlyBuild:
     className: AnimatedTexture
   - hash:
       serializedVersion: 2
-      Hash: cf8cb22cdbe298915c0f433c1d40da0a
+      Hash: 4c245ab43e257ce84b501d6e73caefbb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ControlePlayer

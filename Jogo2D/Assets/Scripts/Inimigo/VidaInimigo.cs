@@ -13,11 +13,23 @@ public class VidaInimigo : MonoBehaviour
         currenteVida = maxVida;
     }
 
-    private void Update()
+    public void ReceberDano(int dano)
     {
-        if(currenteVida <= 0)
+        currenteVida -= dano;
+
+        if (currenteVida <= 0)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void NivelVida()
+    {
+        switch (XpPlayer.nivelAtual)
+        {
+            case 1:
+                maxVida = 50;
+                break;
         }
     }
 }
