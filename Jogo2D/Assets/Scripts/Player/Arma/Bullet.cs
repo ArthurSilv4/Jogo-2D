@@ -36,7 +36,7 @@ public class Bullet : MonoBehaviour
         {
             enim = collision.gameObject.GetComponent<VidaInimigo>();
 
-            if(enim != null)
+            if (enim != null)
             {
                 enim.ReceberDano(dano);
             }
@@ -45,12 +45,16 @@ public class Bullet : MonoBehaviour
         }
     }
 
+    //Inimigo tem 100 de vida
     private void NivelDano()
     {
         switch (XpPlayer.nivelAtual)
         {
             case 1:
                 dano = 50;
+                break;
+            case 2:
+                dano = 40;
                 break;
         }
     }

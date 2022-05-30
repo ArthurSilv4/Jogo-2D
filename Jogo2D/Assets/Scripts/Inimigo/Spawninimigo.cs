@@ -37,6 +37,7 @@ public class Spawninimigo : MonoBehaviour
         tempoAtualSpawn = tempoMaximoSpawn;
     }
 
+    //
     private void NivelSpawn()
     {
         switch (XpPlayer.nivelAtual)

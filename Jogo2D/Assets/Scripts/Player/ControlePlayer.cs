@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ControlePlayer : MonoBehaviour
 {
-    public Animator armaAnin;
+    [SerializeField] private SpriteRenderer render;
 
-    public Animator anin;
-    public Rigidbody2D rig;
+    [SerializeField] private Animator armaAnin;
+    [SerializeField] private Animator anin;
+    [SerializeField] private Rigidbody2D rig;
 
     [SerializeField] private Transform armaAux;
     [SerializeField] private GameObject bala;
@@ -38,8 +39,9 @@ public class ControlePlayer : MonoBehaviour
 
         tempoAtualTiro = 0.85f;
 
-        rig.GetComponent<Rigidbody2D>();
-        anin.GetComponent<Animator>();
+        render.gameObject.GetComponent<SpriteRenderer>();
+        rig.gameObject.GetComponent<Rigidbody2D>();
+        anin.gameObject.GetComponent<Animator>();
     }
 
     void Update()
@@ -51,6 +53,7 @@ public class ControlePlayer : MonoBehaviour
         Rotacao();
         Atirar();
         StartCoroutine(Recarregar());
+        StartCoroutine(MudarACor());
     }
 
     private void FixedUpdate()
@@ -113,6 +116,18 @@ public class ControlePlayer : MonoBehaviour
         if (deleiAtirar > 0)
         {
             deleiAtirar -=  Time.deltaTime;
+        }
+    }
+
+    IEnumerator MudarACor()
+    {
+        if (Inimigo.inimigoAtacando == true)
+        {
+            render.color = Color.red;
+
+            yield return new WaitForSeconds(0.5f);
+
+            render.color = Color.white;
         }
     }
 

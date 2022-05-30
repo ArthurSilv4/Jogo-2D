@@ -11,12 +11,8 @@ public class VidaInimigo : MonoBehaviour
 
     private void Start()
     {
+        maxVida = 100;
         currenteVida = maxVida;
-    }
-
-    public void Update()
-    {
-        NivelVida();
     }
 
     public void ReceberDano(int dano)
@@ -30,19 +26,6 @@ public class VidaInimigo : MonoBehaviour
             Instantiate(spritXp, this.transform.position, this.transform.rotation);
 
             Cronometro.pontos += 7.4f;
-        }
-    }
-
-    private void NivelVida()
-    {
-        switch (XpPlayer.nivelAtual)
-        {
-            case 1:
-                maxVida = 50;
-                break;
-            case 2:
-                maxVida = 50;
-                break;
         }
     }
 }

@@ -12,16 +12,28 @@ public class XpPlayer : MonoBehaviour
 
     private void Start()
     {
-        maxXp = 10;
         currenteXp = maxXp;
     }
 
     private void FixedUpdate()
     {
+        //Passar Nivel
         if(currenteXp >= maxXp)
         {
             nivelAtual++;
             currenteXp = 0;
+        }
+
+        XpNivel();
+    }
+
+    private void XpNivel()
+    {
+        switch (nivelAtual)
+        {
+            case 1:
+                maxXp = 10;
+                break;
         }
     }
 }

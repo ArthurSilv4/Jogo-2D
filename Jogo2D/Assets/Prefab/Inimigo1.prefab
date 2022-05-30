@@ -121,6 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63f864c559f251a4b8a39775d83d54c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cores:
+  - {r: 1, g: 1, b: 1, a: 0}
+  player: {fileID: 5056904826666637947, guid: f220e018aa3c45b48a4af7dee0941cf8, type: 3}
+  anim: {fileID: 2817467539616626920}
   posicaoPlayer: {fileID: 0}
   velocidade: 3
   inimigo: {fileID: 7066956222720860924}

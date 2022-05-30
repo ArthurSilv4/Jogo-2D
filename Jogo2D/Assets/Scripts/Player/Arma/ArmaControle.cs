@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ArmaControle : MonoBehaviour
 {
-    public Text txtPente;
-    public Text txtMunicaoAtual;
+    [SerializeField] private Text txtPente;
+    [SerializeField] private Text txtMunicaoAtual;
 
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private Transform player;
@@ -49,6 +49,7 @@ public class ArmaControle : MonoBehaviour
         txtMunicaoAtual.text = municaoAtual.ToString("00");
     }
 
+    //Inimigo tem 100 DE vida
     void NivelArma()
     {
         switch (XpPlayer.nivelAtual)
