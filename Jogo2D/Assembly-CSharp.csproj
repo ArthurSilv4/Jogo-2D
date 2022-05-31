@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Ui\XpUI.cs" />
      <Compile Include="Assets\Scripts\Player\Arma\ArmaControle.cs" />
      <Compile Include="Assets\Scripts\Inimigo\VidaInimigo.cs" />
+     <Compile Include="Assets\Scripts\Ui\Mouse.cs" />
      <Compile Include="Assets\Scripts\Player\VidaPlayer.cs" />
      <Compile Include="Assets\Scripts\Ui\Cronometro.cs" />
      <Compile Include="Assets\Scripts\Inimigo\Inimigo.cs" />
