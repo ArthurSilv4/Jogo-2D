@@ -8,6 +8,7 @@ TagManager:
   - Inimigo
   - Dentro
   - XP
+  - Acido
   layers:
   - Default
   - TransparentFX
