@@ -67,15 +67,19 @@ public class ControlePlayer : MonoBehaviour
         {
             spawnBala.transform.localRotation = miraDireita;
 
-            armaAux.transform.localScale = olhandoDireita;
-            transform.localScale = olhandoDireita;
+            render.flipX = false;
+
+            //armaAux.transform.localScale = olhandoDireita;
+           // transform.localScale = olhandoDireita;
         }
         if (Input.GetAxisRaw("Horizontal") < 0) //Olhando esquerda
         {
             spawnBala.transform.localRotation = miraEsuerda;
 
-            armaAux.transform.localScale = olhandoEsquerda;
-            transform.localScale = olhandoEsquerda;
+            render.flipX = true;
+
+            //armaAux.transform.localScale = olhandoEsquerda;
+           // transform.localScale = olhandoEsquerda;
         }
     }
 

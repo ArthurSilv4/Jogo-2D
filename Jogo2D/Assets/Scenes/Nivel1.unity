@@ -81452,6 +81452,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1615130474}
     - target: {fileID: 5056904825927821943, guid: f220e018aa3c45b48a4af7dee0941cf8, type: 3}
+      propertyPath: spritePlayer
+      value: 
+      objectReference: {fileID: 1869459118}
+    - target: {fileID: 5056904825927821943, guid: f220e018aa3c45b48a4af7dee0941cf8, type: 3}
       propertyPath: txtMunicaoAtual
       value: 
       objectReference: {fileID: 2080351545}
@@ -81504,6 +81508,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5056904826666637945, guid: f220e018aa3c45b48a4af7dee0941cf8, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056904826666637945, guid: f220e018aa3c45b48a4af7dee0941cf8, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
@@ -81527,5 +81535,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5056904826739504187, guid: f220e018aa3c45b48a4af7dee0941cf8, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f220e018aa3c45b48a4af7dee0941cf8, type: 3}
