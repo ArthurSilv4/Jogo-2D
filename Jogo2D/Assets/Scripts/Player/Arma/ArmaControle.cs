@@ -8,6 +8,9 @@ public class ArmaControle : MonoBehaviour
     [SerializeField] private Text txtPente;
     [SerializeField] private Text txtMunicaoAtual;
 
+    [SerializeField] private SpriteRenderer spritePlayer;
+
+
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private Transform player;
 
@@ -32,14 +35,18 @@ public class ArmaControle : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse1) && sprite.flipY == true)
         {
-            player.transform.localScale = ControlePlayer.olhandoEsquerda;
-            transform.localScale = ControlePlayer.olhandoEsquerda;
+            spritePlayer.flipX = true;
+
+           // player.transform.localScale = ControlePlayer.olhandoEsquerda;
+            //transform.localScale = ControlePlayer.olhandoEsquerda;
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse1) && sprite.flipY == false)
         {
-            player.transform.localScale = ControlePlayer.olhandoDireita;
-            transform.localScale = ControlePlayer.olhandoDireita;
+            spritePlayer.flipX = false;
+
+            // player.transform.localScale = ControlePlayer.olhandoDireita;
+            //transform.localScale = ControlePlayer.olhandoDireita;
         }
     }
 
