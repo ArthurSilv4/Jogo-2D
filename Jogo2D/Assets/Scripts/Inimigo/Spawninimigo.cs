@@ -43,8 +43,19 @@ public class Spawninimigo : MonoBehaviour
         switch (XpPlayer.nivelAtual)
         {
             case 1:
+                tempoMaximoSpawn = 7;
+                break;
+            case 2:
                 tempoMaximoSpawn = 5;
                 break;
+            case 3:
+                tempoMaximoSpawn = 2.5f;
+                break;
+        }
+
+        if(XpPlayer.nivelAtual > 3)
+        {
+            tempoMaximoSpawn = 2.5f;
         }
     }
 }

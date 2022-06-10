@@ -36,17 +36,11 @@ public class ArmaControle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1) && sprite.flipY == true)
         {
             spritePlayer.flipX = true;
-
-           // player.transform.localScale = ControlePlayer.olhandoEsquerda;
-            //transform.localScale = ControlePlayer.olhandoEsquerda;
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse1) && sprite.flipY == false)
         {
             spritePlayer.flipX = false;
-
-            // player.transform.localScale = ControlePlayer.olhandoDireita;
-            //transform.localScale = ControlePlayer.olhandoDireita;
         }
     }
 
@@ -62,11 +56,16 @@ public class ArmaControle : MonoBehaviour
         switch (XpPlayer.nivelAtual)
         {
             case 1:
-                penteTotal = 50;
+                penteTotal = 10;
                 break;
             case 2:
-                penteTotal = 50;
+                penteTotal = 25;
                 break;
+        }
+
+        if(XpPlayer.nivelAtual > 2)
+        {
+            penteTotal = 30;
         }
             
     }

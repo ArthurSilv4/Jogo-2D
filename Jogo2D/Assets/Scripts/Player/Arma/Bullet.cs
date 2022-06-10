@@ -57,6 +57,11 @@ public class Bullet : MonoBehaviour
                 dano = 40;
                 break;
         }
+
+        if(XpPlayer.nivelAtual > 2)
+        {
+            dano = 25;
+        }
     }
 }
 

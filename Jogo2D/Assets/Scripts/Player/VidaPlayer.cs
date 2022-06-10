@@ -5,6 +5,7 @@ using System;
 
 public class VidaPlayer : MonoBehaviour
 {
+
     public static int maxVida;
     public static int currenteVida;
 

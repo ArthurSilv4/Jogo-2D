@@ -46,7 +46,6 @@ public class Inimigo : MonoBehaviour
 
         delei -= Time.deltaTime;
 
-        //player.GetComponent<SpriteRenderer>().color = cores[1];
 
 
         NivelAtaque();
@@ -93,6 +92,16 @@ public class Inimigo : MonoBehaviour
                 deleiAtaque = 2;
                 danoInimigo = 10;
                 break;
+            case 2:
+                deleiAtaque = 1.5f;
+                danoInimigo = 15;
+                break;
+        }
+
+        if (XpPlayer.nivelAtual > 2)
+        {
+            deleiAtaque = 1.2f;
+            danoInimigo = 18;
         }
     }
 }

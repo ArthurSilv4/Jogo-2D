@@ -34,6 +34,16 @@ public class VidaInimigo : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Explosao"))
+        {
+            StartCoroutine(MudarACor());
+
+            Destroy(gameObject, 2f);
+        }
+    }
+
     IEnumerator MudarACor()
     {
         

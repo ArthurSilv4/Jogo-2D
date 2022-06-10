@@ -34,6 +34,14 @@ public class XpPlayer : MonoBehaviour
             case 1:
                 maxXp = 10;
                 break;
+            case 2:
+                maxXp = 15;
+                break;
+        }
+
+        if(nivelAtual > 2)
+        {
+            maxXp = 20;
         }
     }
 }

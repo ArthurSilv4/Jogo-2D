@@ -6,6 +6,10 @@ public class ControlePlayer : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer render;
 
+    [SerializeField] private GameObject scriptInimigo;
+    [SerializeField] private GameObject explosao;
+
+
     [SerializeField] private Animator armaAnin;
     [SerializeField] private Animator anin;
     [SerializeField] private Rigidbody2D rig;
@@ -22,6 +26,10 @@ public class ControlePlayer : MonoBehaviour
 
     void Start()
     {
+        explosao.SetActive(false);
+
+        scriptInimigo.GetComponent<Inimigo>().enabled = true;
+
         tempoAtualTiro = 0.85f;
 
         render.gameObject.GetComponent<SpriteRenderer>();
@@ -120,6 +128,17 @@ public class ControlePlayer : MonoBehaviour
         else
         {
             anin.SetBool("Andando", false);
+        }
+
+        if (VidaPlayer.currenteVida <= 0)
+        {
+            anin.SetBool("Morrendo", true);
+
+            explosao.SetActive(true);
+
+            gameObject.GetComponent<ControlePlayer>().enabled = false;
+            gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+            scriptInimigo.GetComponent<Inimigo>().enabled = false;
         }
     }
 }
