@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class VidaInimigo : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer render;
+
     public GameObject spritXp;
 
     public static int maxVida;
@@ -17,7 +19,10 @@ public class VidaInimigo : MonoBehaviour
 
     public void ReceberDano(int dano)
     {
+        StartCoroutine(MudarACor());
+
         currenteVida -= dano;
+
 
         if (currenteVida <= 0)
         {
@@ -27,5 +32,16 @@ public class VidaInimigo : MonoBehaviour
 
             Cronometro.pontos += 7.4f;
         }
+    }
+
+    IEnumerator MudarACor()
+    {
+        
+            render.color = Color.red;
+
+            yield return new WaitForSeconds(0.5f);
+
+            render.color = Color.white;
+        
     }
 }

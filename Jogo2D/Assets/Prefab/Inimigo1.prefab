@@ -121,9 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63f864c559f251a4b8a39775d83d54c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cores:
-  - {r: 1, g: 1, b: 1, a: 0}
-  player: {fileID: 5056904826666637947, guid: f220e018aa3c45b48a4af7dee0941cf8, type: 3}
   anim: {fileID: 2817467539616626920}
   posicaoPlayer: {fileID: 0}
   velocidade: 3
@@ -140,6 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0581fe8dbd7c30f4c8e972ca60513a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  render: {fileID: 7066956222720860924}
   spritXp: {fileID: 3904033067797739671, guid: 8779d2f04549ab845b0a8ffc87f03ec5, type: 3}
 --- !u!70 &7066956222720860903
 CapsuleCollider2D:

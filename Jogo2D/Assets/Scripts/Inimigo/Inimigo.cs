@@ -65,6 +65,12 @@ public class Inimigo : MonoBehaviour
         {
             inimigoAtacando = false;
         }
+
+
+        if (collision.gameObject.CompareTag("Fora"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void DanoPlayeer()
@@ -78,8 +84,8 @@ public class Inimigo : MonoBehaviour
         delei = deleiAtaque;
     }
 
-    //Player tem 100 de vida
-    private void NivelAtaque()
+        //Player tem 100 de vida
+        private void NivelAtaque()
     {
         switch (XpPlayer.nivelAtual)
         {
