@@ -12,7 +12,18 @@ public class Trofeu : MonoBehaviour
 
     IEnumerator Destruir()
     {
-        yield return new WaitForSeconds(50f);
+        yield return new WaitForSeconds(70f);
         Destroy(gameObject);
+        SawnTrofeu.quantia--;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            SawnTrofeu.trofeuCorrente += 1;
+
+            Destroy(gameObject);
+        }
     }
 }

@@ -1,35 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class SawnTrofeu : MonoBehaviour
 {
+    public Text TextTrofeu;
+
     public GameObject trofeu;
 
     public Transform[] spawner;
 
-    public static bool podeSpawnar;
-    int aleatorio;
+    public static int quantia;
 
-    void Start()
-    {
-        podeSpawnar = true;
-    }
+    public static int trofeuCorrente;
 
     void FixedUpdate()
     {
-        StartCoroutine(CalcularTempo());
+        CalcularTempo();
+        ExibirUI();
     }
 
-    IEnumerator CalcularTempo()
+    void ExibirUI()
     {
-        if(Cronometro.segundos >= 10 && Cronometro.segundos < 15)
+        TextTrofeu.text = trofeuCorrente.ToString("0");
+    }
+
+    void CalcularTempo()
+    {
+        if(Cronometro.segundos >= 10 && Cronometro.segundos < 13)
         {
 
             SpawnarTrofeu();
-
-            yield return new WaitForSeconds(60f);
-            podeSpawnar = true;
+            
         }
     }
 
@@ -37,11 +41,11 @@ public class SawnTrofeu : MonoBehaviour
     {
         int aleatorio = Random.Range(0, spawner.Length);
 
-        if (spawner[aleatorio].position != null & podeSpawnar == true)
+        if (spawner[aleatorio].position != null & quantia < 2)
         {
             Instantiate(trofeu, spawner[aleatorio].position, transform.rotation);
 
-            podeSpawnar = false;
+            quantia++;
         }
     }
 }
