@@ -11,9 +11,9 @@ public class Cronometro : MonoBehaviour
 
     public static float pontos;
 
-    private int minutos;
+    public static int minutos;
     private int limiteSegundos;
-    private float segundos;
+    public static float segundos;
 
     private void Start()
     {
@@ -27,12 +27,15 @@ public class Cronometro : MonoBehaviour
 
         TextPontos.text = pontos.ToString("0");
 
-        segundos += Time.deltaTime;
-
-        if(segundos >= limiteSegundos)
+        if (ControlePlayer.morto == false)
         {
-            minutos++;
-            segundos = 0 + 1;
+            segundos += Time.deltaTime;
+
+            if (segundos >= limiteSegundos)
+            {
+                minutos++;
+                segundos = 0 + 1;
+            }
         }
     }
 }

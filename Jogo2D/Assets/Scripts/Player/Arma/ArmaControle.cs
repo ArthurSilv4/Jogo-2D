@@ -5,11 +5,14 @@ using UnityEngine.UI;
 
 public class ArmaControle : MonoBehaviour
 {
+    [SerializeField] private Animator anim;
+
+    [SerializeField] GameObject iconeAlerta;
+
     [SerializeField] private Text txtPente;
     [SerializeField] private Text txtMunicaoAtual;
 
     [SerializeField] private SpriteRenderer spritePlayer;
-
 
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private Transform player;
@@ -48,6 +51,17 @@ public class ArmaControle : MonoBehaviour
     {
         txtPente.text = penteTotal.ToString("00");
         txtMunicaoAtual.text = municaoAtual.ToString("00");
+
+        if(municaoAtual <= 5)
+        {
+            iconeAlerta.SetActive(true);
+            anim.SetBool("PoucaBala", true);
+        }
+        else
+        {
+            iconeAlerta.SetActive(false);
+            anim.SetBool("PoucaBala", false);
+        }
     }
 
     //Inimigo tem 100 DE vida

@@ -11,7 +11,7 @@ public class Inimigo : MonoBehaviour
 
     [SerializeField] private SpriteRenderer inimigo;
 
-    public static bool inimigoAtacando;
+    public static bool tomandoDano;
 
     private int danoInimigo;
 
@@ -62,7 +62,7 @@ public class Inimigo : MonoBehaviour
         }
         else
         {
-            inimigoAtacando = false;
+            tomandoDano = false;
         }
 
 
@@ -76,7 +76,7 @@ public class Inimigo : MonoBehaviour
     {
         anim.SetTrigger("AtacandoInimigo");
 
-        inimigoAtacando = true;
+        tomandoDano = true;
 
         VidaPlayer.currenteVida -= danoInimigo;
 

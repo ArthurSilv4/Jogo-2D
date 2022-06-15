@@ -19,13 +19,19 @@ public class ControlePlayer : MonoBehaviour
 
     [SerializeField] private float velocidadeMoimento;
 
+    private float deleiAcido;
     private float deleiAtirar;
     private float tempoAtualTiro;
 
     private Vector2 movimento;
 
+    public static bool morto;
+
+
     void Start()
     {
+        morto = false;
+
         explosao.SetActive(false);
 
         scriptInimigo.GetComponent<Inimigo>().enabled = true;
@@ -106,9 +112,31 @@ public class ControlePlayer : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+
+
+        if (collision.gameObject.CompareTag("Acido"))
+        {
+            deleiAcido -= Time.deltaTime;
+
+            if (deleiAcido <= 0)
+            {
+                VidaPlayer.currenteVida -= 5;
+
+                Inimigo.tomandoDano = true;
+
+                deleiAcido = 1.5f;
+
+            }
+        }
+    }
+
+    
+
     IEnumerator MudarACor()
     {
-        if (Inimigo.inimigoAtacando == true)
+        if (Inimigo.tomandoDano == true)
         {
             render.color = Color.red;
 
@@ -132,6 +160,8 @@ public class ControlePlayer : MonoBehaviour
 
         if (VidaPlayer.currenteVida <= 0)
         {
+            morto = true;
+
             anin.SetBool("Morrendo", true);
 
             explosao.SetActive(true);
@@ -139,6 +169,10 @@ public class ControlePlayer : MonoBehaviour
             gameObject.GetComponent<ControlePlayer>().enabled = false;
             gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             scriptInimigo.GetComponent<Inimigo>().enabled = false;
+        }
+        else
+        {
+            morto = false;
         }
     }
 }
