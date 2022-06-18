@@ -17,6 +17,9 @@ public class Cronometro : MonoBehaviour
 
     private void Start()
     {
+        minutos = 0;
+        segundos = 0;
+
         limiteSegundos = 60;
     }
 

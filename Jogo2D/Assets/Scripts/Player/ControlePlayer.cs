@@ -23,6 +23,8 @@ public class ControlePlayer : MonoBehaviour
     private float deleiAtirar;
     private float tempoAtualTiro;
 
+    
+
     private Vector2 movimento;
 
     public static bool morto;
@@ -30,6 +32,8 @@ public class ControlePlayer : MonoBehaviour
 
     void Start()
     {
+        
+
         morto = false;
 
         explosao.SetActive(false);
@@ -53,6 +57,8 @@ public class ControlePlayer : MonoBehaviour
         Atirar();
         StartCoroutine(Recarregar());
         StartCoroutine(MudarACor());
+
+        
     }
 
     private void FixedUpdate()
@@ -80,8 +86,13 @@ public class ControlePlayer : MonoBehaviour
         {
             if (ArmaControle.municaoAtual != ArmaControle.penteTotal)
             {
-                yield return new WaitForSeconds(0.5f);
+                RecargaPlayer.Regarregar();
+
+                yield return new WaitForSeconds(0.8f);
                 ArmaControle.municaoAtual = ArmaControle.penteTotal;
+
+                yield return new WaitForSeconds(0.1f);
+                RecargaPlayer.Voltar();
             }
         }
     }
