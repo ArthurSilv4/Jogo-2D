@@ -16,6 +16,11 @@ public class SawnTrofeu : MonoBehaviour
 
     public static int trofeuCorrente;
 
+    private void Start()
+    {
+        trofeuCorrente = 0;
+    }
+
     void FixedUpdate()
     {
         CalcularTempo();
@@ -41,7 +46,7 @@ public class SawnTrofeu : MonoBehaviour
     {
         int aleatorio = Random.Range(0, spawner.Length);
 
-        if (spawner[aleatorio].position != null & quantia < 2)
+        if (spawner[aleatorio].position != null & quantia < 3)
         {
             Instantiate(trofeu, spawner[aleatorio].position, transform.rotation);
 

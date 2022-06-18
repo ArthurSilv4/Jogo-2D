@@ -58,6 +58,8 @@ public class ControlePlayer : MonoBehaviour
     private void FixedUpdate()
     {
         rig.MovePosition(rig.position + movimento.normalized * velocidadeMoimento * Time.fixedDeltaTime);
+
+        NivelPlay();
     }
 
     void Rotacao()
@@ -174,5 +176,32 @@ public class ControlePlayer : MonoBehaviour
         {
             morto = false;
         }
+    }
+
+    void NivelPlay()
+    {
+        switch (XpPlayer.nivelAtual)
+        {
+            case 1:
+                velocidadeMoimento = 5;
+                tempoAtualTiro = 0.85f;
+                break;
+            case 2:
+                velocidadeMoimento = 6;
+                tempoAtualTiro = 0.50f;
+                break;
+            case 3:
+                velocidadeMoimento = 7;
+                tempoAtualTiro = 0.40f;
+                break;
+        }
+
+        if (XpPlayer.nivelAtual > 3)
+        {
+            velocidadeMoimento = 8;
+            tempoAtualTiro = 0.30f;
+        }
+
+
     }
 }

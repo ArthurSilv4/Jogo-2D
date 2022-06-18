@@ -12,6 +12,8 @@ public class XpPlayer : MonoBehaviour
 
     private void Start()
     {
+        nivelAtual = 0;
+        maxXp = 0;
         currenteXp = maxXp;
     }
 
@@ -31,6 +33,9 @@ public class XpPlayer : MonoBehaviour
     {
         switch (nivelAtual)
         {
+            case 0:
+                maxXp = 1;
+                break;
             case 1:
                 maxXp = 10;
                 break;

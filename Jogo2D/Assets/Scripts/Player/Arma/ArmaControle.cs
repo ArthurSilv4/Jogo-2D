@@ -73,13 +73,16 @@ public class ArmaControle : MonoBehaviour
                 penteTotal = 10;
                 break;
             case 2:
-                penteTotal = 25;
+                penteTotal = 20;
+                break;
+            case 3:
+                penteTotal = 30;
                 break;
         }
 
-        if(XpPlayer.nivelAtual > 2)
+        if(XpPlayer.nivelAtual > 3)
         {
-            penteTotal = 30;
+            penteTotal = 35;
         }
             
     }

@@ -17,13 +17,13 @@ public class Trofeu : MonoBehaviour
         SawnTrofeu.quantia--;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             SawnTrofeu.trofeuCorrente += 1;
 
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 }

@@ -91,17 +91,25 @@ public class Inimigo : MonoBehaviour
             case 1:
                 deleiAtaque = 2;
                 danoInimigo = 10;
+                velocidade = 3;
                 break;
             case 2:
                 deleiAtaque = 1.5f;
                 danoInimigo = 15;
+                velocidade = 4;
+                break;
+            case 3:
+                deleiAtaque = 1.2f;
+                danoInimigo = 17;
+                velocidade = 5f;
                 break;
         }
 
-        if (XpPlayer.nivelAtual > 2)
+        if (XpPlayer.nivelAtual > 3)
         {
-            deleiAtaque = 1.2f;
-            danoInimigo = 18;
+            deleiAtaque = 1f;
+            danoInimigo = 19;
+            velocidade = 6.5f;
         }
     }
 }

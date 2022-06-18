@@ -11,6 +11,7 @@ TagManager:
   - Acido
   - Fora
   - Explosao
+  - Parede
   layers:
   - Default
   - TransparentFX

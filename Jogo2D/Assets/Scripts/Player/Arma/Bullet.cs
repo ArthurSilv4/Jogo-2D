@@ -45,6 +45,14 @@ public class Bullet : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Parede"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     //Inimigo tem 100 de vida
     private void NivelDano()
     {
@@ -56,9 +64,12 @@ public class Bullet : MonoBehaviour
             case 2:
                 dano = 40;
                 break;
+            case 3:
+                dano = 30;
+                break;
         }
 
-        if(XpPlayer.nivelAtual > 2)
+        if(XpPlayer.nivelAtual > 3)
         {
             dano = 25;
         }

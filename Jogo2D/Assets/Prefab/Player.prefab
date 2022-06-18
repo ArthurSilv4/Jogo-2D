@@ -44,8 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851434e3b7234044f80638b43840a489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  iconeAlerta: {fileID: 0}
   txtPente: {fileID: 0}
   txtMunicaoAtual: {fileID: 0}
+  spritePlayer: {fileID: 0}
   sprite: {fileID: 5056904826544871053}
   player: {fileID: 5056904826666637944}
 --- !u!1 &5056904826544871055
@@ -376,10 +379,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0fa5a14a02fc748acfcd3e0c3a1c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  render: {fileID: 0}
+  scriptInimigo: {fileID: 0}
+  explosao: {fileID: 0}
   armaAnin: {fileID: 5056904826544871052}
   anin: {fileID: 5056904826666637946}
   rig: {fileID: 5056904826666637926}
-  armaAux: {fileID: 5056904825927821896}
   bala: {fileID: 8277758637248314530, guid: 3efac1767bc6ac04bb3bfd0aa56b342f, type: 3}
   spawnBala: {fileID: 5056904826739504186}
   velocidadeMoimento: 5

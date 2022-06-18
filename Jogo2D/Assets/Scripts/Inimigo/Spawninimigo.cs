@@ -42,11 +42,14 @@ public class Spawninimigo : MonoBehaviour
     {
         switch (XpPlayer.nivelAtual)
         {
+            case 0:
+                tempoMaximoSpawn = 10;
+                break;
             case 1:
-                tempoMaximoSpawn = 7;
+                tempoMaximoSpawn = 6;
                 break;
             case 2:
-                tempoMaximoSpawn = 5;
+                tempoMaximoSpawn = 4;
                 break;
             case 3:
                 tempoMaximoSpawn = 2.5f;
@@ -55,7 +58,7 @@ public class Spawninimigo : MonoBehaviour
 
         if(XpPlayer.nivelAtual > 3)
         {
-            tempoMaximoSpawn = 2.5f;
+            tempoMaximoSpawn = 2.2f;
         }
     }
 }
