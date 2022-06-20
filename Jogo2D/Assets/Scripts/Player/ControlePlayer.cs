@@ -9,12 +9,13 @@ public class ControlePlayer : MonoBehaviour
     [SerializeField] private GameObject scriptInimigo;
     [SerializeField] private GameObject explosao;
 
-
     [SerializeField] private Animator armaAnin;
     [SerializeField] private Animator anin;
     [SerializeField] private Rigidbody2D rig;
 
+    [SerializeField] private GameObject poucaBala;
     [SerializeField] private GameObject bala;
+    [SerializeField] private GameObject especialBala;
     [SerializeField] private Transform spawnBala;
 
     [SerializeField] private float velocidadeMoimento;
@@ -55,6 +56,7 @@ public class ControlePlayer : MonoBehaviour
         Animacao();
         Rotacao();
         Atirar();
+        StartCoroutine(HabilidadeEspecial());
         StartCoroutine(Recarregar());
         StartCoroutine(MudarACor());
 
@@ -122,6 +124,34 @@ public class ControlePlayer : MonoBehaviour
         if (deleiAtirar > 0)
         {
             deleiAtirar -=  Time.deltaTime;
+        }
+    }
+
+    IEnumerator HabilidadeEspecial()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if(EspecialControle.currenteEspecial >= EspecialControle.maxEspecial && ArmaControle.municaoAtual >= 10)
+            {
+                armaAnin.SetTrigger("Fire");
+
+                anin.SetBool("Atirando", true);
+
+                EspecialControle.currenteEspecial = 0;
+
+                ArmaControle.municaoAtual = 0;
+                
+                Instantiate(especialBala, spawnBala.position, spawnBala.rotation);
+            }
+
+            if(EspecialControle.currenteEspecial >= EspecialControle.maxEspecial && ArmaControle.municaoAtual < 10)
+            {
+                poucaBala.SetActive(true);
+
+                yield return new WaitForSeconds(3);
+
+                poucaBala.SetActive(false);
+            }
         }
     }
 
@@ -195,22 +225,26 @@ public class ControlePlayer : MonoBehaviour
         {
             case 1:
                 velocidadeMoimento = 5;
-                tempoAtualTiro = 0.85f;
+                tempoAtualTiro = 1f;
                 break;
             case 2:
                 velocidadeMoimento = 6;
-                tempoAtualTiro = 0.50f;
+                tempoAtualTiro = 0.8f;
                 break;
             case 3:
                 velocidadeMoimento = 7;
-                tempoAtualTiro = 0.40f;
+                tempoAtualTiro = 0.5f;
+                break;
+            case 4:
+                velocidadeMoimento = 8;
+                tempoAtualTiro = 0.4f;
                 break;
         }
 
-        if (XpPlayer.nivelAtual > 3)
+        if (XpPlayer.nivelAtual > 4)
         {
-            velocidadeMoimento = 8;
-            tempoAtualTiro = 0.30f;
+            velocidadeMoimento = 9;
+            tempoAtualTiro = 0.35f;
         }
 
 

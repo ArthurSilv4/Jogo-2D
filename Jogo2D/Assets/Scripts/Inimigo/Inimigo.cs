@@ -107,9 +107,9 @@ public class Inimigo : MonoBehaviour
 
         if (XpPlayer.nivelAtual > 3)
         {
-            deleiAtaque = 1f;
-            danoInimigo = 19;
-            velocidade = 6.5f;
+            deleiAtaque = 0.8f;
+            danoInimigo = 20;
+            velocidade = 7f;
         }
     }
 }

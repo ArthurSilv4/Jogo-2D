@@ -46,19 +46,23 @@ public class Spawninimigo : MonoBehaviour
                 tempoMaximoSpawn = 10;
                 break;
             case 1:
-                tempoMaximoSpawn = 6;
+                tempoMaximoSpawn = 7;
                 break;
             case 2:
                 tempoMaximoSpawn = 4;
                 break;
             case 3:
+                tempoMaximoSpawn = 3f;
+                break;
+            case 4:
                 tempoMaximoSpawn = 2.5f;
                 break;
+
         }
 
-        if(XpPlayer.nivelAtual > 3)
+        if(XpPlayer.nivelAtual > 4)
         {
-            tempoMaximoSpawn = 2.2f;
+            tempoMaximoSpawn = 2f;
         }
     }
 }

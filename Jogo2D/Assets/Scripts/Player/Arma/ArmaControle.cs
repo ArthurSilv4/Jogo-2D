@@ -7,6 +7,7 @@ public class ArmaControle : MonoBehaviour
 {
     [SerializeField] private Animator anim;
 
+    [SerializeField] GameObject semMunicao;
     [SerializeField] GameObject iconeAlerta;
 
     [SerializeField] private Text txtPente;
@@ -19,6 +20,11 @@ public class ArmaControle : MonoBehaviour
 
     public static int municaoAtual;
     public static int penteTotal;
+
+    private void Start()
+    {
+        municaoAtual = penteTotal;
+    }
 
     void Update()
     {
@@ -62,6 +68,15 @@ public class ArmaControle : MonoBehaviour
             iconeAlerta.SetActive(false);
             anim.SetBool("PoucaBala", false);
         }
+
+        if(municaoAtual <= 0)
+        {
+            semMunicao.SetActive(true);
+        }
+        else
+        {
+            semMunicao.SetActive(false);
+        }
     }
 
     //Inimigo tem 100 DE vida
@@ -69,21 +84,29 @@ public class ArmaControle : MonoBehaviour
     {
         switch (XpPlayer.nivelAtual)
         {
+            case 0:
+                penteTotal = 10;
+                break;
             case 1:
                 penteTotal = 10;
                 break;
             case 2:
-                penteTotal = 20;
+                penteTotal = 15;
                 break;
             case 3:
+                penteTotal = 20;
+                break;
+            case 4:
+                penteTotal = 25;
+                break;
+            case 5:
                 penteTotal = 30;
                 break;
         }
 
-        if(XpPlayer.nivelAtual > 3)
+        if(XpPlayer.nivelAtual > 5)
         {
             penteTotal = 35;
         }
-            
     }
 }

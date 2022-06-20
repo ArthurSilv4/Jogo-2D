@@ -15,6 +15,14 @@ public class VidaPlayer : MonoBehaviour
         currenteVida = maxVida;
     }
 
+    private void Update()
+    {
+        if(Cronometro.minutos == 2 || Cronometro.minutos == 4 || Cronometro.minutos == 6)
+        {
+            currenteVida += 2;
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Vida"))

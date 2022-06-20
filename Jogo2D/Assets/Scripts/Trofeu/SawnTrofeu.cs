@@ -38,6 +38,8 @@ public class SawnTrofeu : MonoBehaviour
         {
 
             SpawnarTrofeu();
+
+            ControleTrofeuUI.spawndado = true;
             
         }
     }

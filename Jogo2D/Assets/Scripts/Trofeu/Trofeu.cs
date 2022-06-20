@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Trofeu : MonoBehaviour
 {
-
     void Update()
     {
         StartCoroutine(Destruir());
@@ -15,6 +14,8 @@ public class Trofeu : MonoBehaviour
         yield return new WaitForSeconds(70f);
         Destroy(gameObject);
         SawnTrofeu.quantia--;
+
+        ControleTrofeuUI.spawndado = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

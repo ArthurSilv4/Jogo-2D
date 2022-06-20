@@ -59,19 +59,22 @@ public class Bullet : MonoBehaviour
         switch (XpPlayer.nivelAtual)
         {
             case 1:
-                dano = 50;
+                dano = 100;
                 break;
             case 2:
-                dano = 40;
+                dano = 60;
                 break;
             case 3:
-                dano = 30;
+                dano = 40;
+                break;
+            case 4:
+                dano = 25;
                 break;
         }
 
-        if(XpPlayer.nivelAtual > 3)
+        if(XpPlayer.nivelAtual > 4)
         {
-            dano = 25;
+            dano = 20;
         }
     }
 }
