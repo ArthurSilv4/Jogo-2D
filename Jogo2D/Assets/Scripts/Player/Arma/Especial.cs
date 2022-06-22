@@ -60,22 +60,22 @@ public class Especial : MonoBehaviour
         switch (XpPlayer.nivelAtual)
         {
             case 1:
-                dano = 100;
+                dano = 200;
                 EspecialControle.maxEspecial = 30;
                 break;
             case 2:
-                dano = 100;
+                dano = 150;
                 EspecialControle.maxEspecial = 20;
                 break;
             case 3:
-                dano = 60;
+                dano = 100;
                 EspecialControle.maxEspecial = 15;
                 break;
         }
 
         if (XpPlayer.nivelAtual > 3)
         {
-            dano = 55;
+            dano = 100;
             EspecialControle.maxEspecial = 10;
         }
     }

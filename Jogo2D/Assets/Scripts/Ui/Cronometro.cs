@@ -19,6 +19,7 @@ public class Cronometro : MonoBehaviour
     {
         minutos = 0;
         segundos = 0;
+        pontos = 0;
 
         limiteSegundos = 60;
     }
