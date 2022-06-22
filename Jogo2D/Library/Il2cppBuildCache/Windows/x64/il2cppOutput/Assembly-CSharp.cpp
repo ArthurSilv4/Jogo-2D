@@ -6210,6 +6210,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cronometro_Start_m313A9735F45105BA95CA56
 		((Cronometro_t3FB7036FE720164AEEACA33B7E0DFB9055DBA8ED_StaticFields*)il2cpp_codegen_static_fields_for(Cronometro_t3FB7036FE720164AEEACA33B7E0DFB9055DBA8ED_il2cpp_TypeInfo_var))->set_minutos_8(0);
 		// segundos = 0;
 		((Cronometro_t3FB7036FE720164AEEACA33B7E0DFB9055DBA8ED_StaticFields*)il2cpp_codegen_static_fields_for(Cronometro_t3FB7036FE720164AEEACA33B7E0DFB9055DBA8ED_il2cpp_TypeInfo_var))->set_segundos_10((0.0f));
+		// pontos = 0;
+		((Cronometro_t3FB7036FE720164AEEACA33B7E0DFB9055DBA8ED_StaticFields*)il2cpp_codegen_static_fields_for(Cronometro_t3FB7036FE720164AEEACA33B7E0DFB9055DBA8ED_il2cpp_TypeInfo_var))->set_pontos_7((0.0f));
 		// limiteSegundos = 60;
 		__this->set_limiteSegundos_9(((int32_t)60));
 		// }
@@ -7290,7 +7292,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SawnTrofeu_SpawnarTrofeu_mDC052D63D37104
 		int32_t L_1;
 		L_1 = Random_Range_m4B3A0037ACA057F33C94508F908546B9317D996A(0, ((int32_t)((int32_t)(((RuntimeArray*)L_0)->max_length))), /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (spawner[aleatorio].position != null & quantia < 3)
+		// if (spawner[aleatorio].position != null & quantia < 5)
 		TransformU5BU5D_t7821C0520CC567C0A069329C01AE9C058C7E3F1D* L_2 = __this->get_spawner_6();
 		int32_t L_3 = V_0;
 		NullCheck(L_2);
@@ -7300,7 +7302,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SawnTrofeu_SpawnarTrofeu_mDC052D63D37104
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6;
 		L_6 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_5, /*hidden argument*/NULL);
 		int32_t L_7 = ((SawnTrofeu_tD1C2653A02C07FCE388170A0001F43F9FEB4058B_StaticFields*)il2cpp_codegen_static_fields_for(SawnTrofeu_tD1C2653A02C07FCE388170A0001F43F9FEB4058B_il2cpp_TypeInfo_var))->get_quantia_7();
-		if (!((int32_t)((int32_t)1&(int32_t)((((int32_t)L_7) < ((int32_t)3))? 1 : 0))))
+		if (!((int32_t)((int32_t)1&(int32_t)((((int32_t)L_7) < ((int32_t)5))? 1 : 0))))
 		{
 			goto IL_0059;
 		}

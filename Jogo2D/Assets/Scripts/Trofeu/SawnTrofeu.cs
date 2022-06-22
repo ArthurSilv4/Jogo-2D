@@ -48,7 +48,7 @@ public class SawnTrofeu : MonoBehaviour
     {
         int aleatorio = Random.Range(0, spawner.Length);
 
-        if (spawner[aleatorio].position != null & quantia < 3)
+        if (spawner[aleatorio].position != null & quantia < 5)
         {
             Instantiate(trofeu, spawner[aleatorio].position, transform.rotation);
 

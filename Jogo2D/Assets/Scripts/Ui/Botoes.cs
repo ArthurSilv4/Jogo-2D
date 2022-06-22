@@ -21,6 +21,8 @@ public class Botoes : MonoBehaviour
     public GameObject canvasPause;
     public GameObject canvasGameOver;
 
+    private bool canvasInicialON;
+
     void Start()
     {
         PauseOn();
@@ -29,6 +31,8 @@ public class Botoes : MonoBehaviour
         canvasInicial.SetActive(true);
         canvasPause.SetActive(false);
         canvasGameOver.SetActive(false);
+
+        canvasInicialON = true;
 
     }
 
@@ -39,6 +43,11 @@ public class Botoes : MonoBehaviour
         if (SawnTrofeu.trofeuCorrente >= 5)
         {
             StartCoroutine(Vitoria());
+        }
+
+        if (Input.GetKey(KeyCode.Escape) && canvasInicialON == false)
+        {
+            PausadoON();
         }
     }
 
@@ -77,6 +86,8 @@ public class Botoes : MonoBehaviour
         PauseOFF();
 
         canvasInicial.SetActive(false);
+
+        canvasInicialON = false;
     }
 
     public void SobreOpen()
