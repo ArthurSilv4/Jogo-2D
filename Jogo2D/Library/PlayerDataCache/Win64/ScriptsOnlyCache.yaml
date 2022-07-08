@@ -32,6 +32,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -112,75 +113,75 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1468}
     - Class: 114
-      Script: {instanceID: 1494}
+      Script: {instanceID: 1490}
     - Class: 114
-      Script: {instanceID: 1726}
+      Script: {instanceID: 1722}
     - Class: 114
-      Script: {instanceID: 1754}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 1832}
+      Script: {instanceID: 1828}
     - Class: 114
-      Script: {instanceID: 1978}
+      Script: {instanceID: 1974}
     - Class: 114
-      Script: {instanceID: 2004}
+      Script: {instanceID: 2000}
     - Class: 114
-      Script: {instanceID: 2072}
+      Script: {instanceID: 2068}
     - Class: 114
-      Script: {instanceID: 2078}
+      Script: {instanceID: 2074}
     - Class: 114
-      Script: {instanceID: 2166}
+      Script: {instanceID: 2162}
     - Class: 114
-      Script: {instanceID: 2176}
+      Script: {instanceID: 2172}
     - Class: 114
-      Script: {instanceID: 2278}
+      Script: {instanceID: 2274}
     - Class: 114
-      Script: {instanceID: 2524}
+      Script: {instanceID: 2520}
     - Class: 114
-      Script: {instanceID: 2574}
+      Script: {instanceID: 2570}
     - Class: 114
-      Script: {instanceID: 2650}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3150}
+      Script: {instanceID: 3146}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 3178}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 3468}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 3504}
+      Script: {instanceID: 3500}
     - Class: 114
-      Script: {instanceID: 3752}
+      Script: {instanceID: 3748}
     - Class: 114
-      Script: {instanceID: 3802}
+      Script: {instanceID: 3798}
     - Class: 114
-      Script: {instanceID: 4010}
+      Script: {instanceID: 4006}
     - Class: 114
-      Script: {instanceID: 4164}
+      Script: {instanceID: 4160}
     - Class: 114
-      Script: {instanceID: 4246}
+      Script: {instanceID: 4242}
     - Class: 114
-      Script: {instanceID: 4496}
+      Script: {instanceID: 4492}
     - Class: 114
-      Script: {instanceID: 4752}
+      Script: {instanceID: 4748}
     - Class: 114
-      Script: {instanceID: 4782}
+      Script: {instanceID: 4778}
     - Class: 114
-      Script: {instanceID: 4854}
+      Script: {instanceID: 4850}
     - Class: 114
-      Script: {instanceID: 4928}
+      Script: {instanceID: 4924}
     - Class: 114
-      Script: {instanceID: 5038}
+      Script: {instanceID: 5034}
     - Class: 114
-      Script: {instanceID: 5414}
+      Script: {instanceID: 5410}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1153,4 +1154,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Nivel1.unity
-  playerPath: C:/Users/Etec/Desktop/Top Down.exe
+  playerPath: "C:/Users/arthu/OneDrive/\xC1rea de Trabalho/Top Down.exe"
