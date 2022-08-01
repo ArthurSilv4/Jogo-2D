@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.9f1 (108be757e447) revision 1084391'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home Single Language; OS build 22000.739; Version 2009; 64bit' Language: 'pt' Physical Memory: 16295 MB
+OS: 'Windows 10 Home Single Language; OS build 22000.795; Version 2009; 64bit' Language: 'pt' Physical Memory: 16295 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ T:/GitHub/Jogo-2D/Jogo2D
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50151
+55860
 Successfully changed project path to: T:/GitHub/Jogo-2D/Jogo2D
 T:/GitHub/Jogo-2D/Jogo2D
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 45.42 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 47.06 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.9f1 (108be757e447)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -35,51 +35,107 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001183 seconds.
+Registered in 0.001255 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.07 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 44.57 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.975 seconds
+- Completed reload, in  1.784 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000937 seconds.
+Registered in 0.000693 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.37 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 45.79 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.884 seconds
+- Completed reload, in  0.854 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1998 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 93.8 MB.
 System memory in use after: 93.8 MB.
 
 Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2445.
-Total: 2.896300 ms (FindLiveObjects: 0.257300 ms CreateObjectMapping: 0.087700 ms MarkObjects: 2.390300 ms  DeleteObjects: 0.159500 ms)
+Total: 2.252500 ms (FindLiveObjects: 0.161500 ms CreateObjectMapping: 0.058100 ms MarkObjects: 1.908000 ms  DeleteObjects: 0.123800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/31532.png
-  artifactKey: Guid(11eff917f8d77884c9b5c5abc6899909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/31532.png using Guid(11eff917f8d77884c9b5c5abc6899909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f84f4442e5bf87ff22e16b5127c1294') in 0.133716 seconds
-  Import took 0.183762 seconds .
+  path: Assets/SimplePixelUI/artwork/halfcustomizible/square/toogle/off2.png
+  artifactKey: Guid(de91fcf09b3a58c40bd25a04beee4093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePixelUI/artwork/halfcustomizible/square/toogle/off2.png using Guid(de91fcf09b3a58c40bd25a04beee4093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94111e7e2f53209f7711b85e06c70a7e') in 0.104559 seconds
+  Import took 0.107643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/SimplePixelUI/artwork/icons/icons_color_customizible.png
+  artifactKey: Guid(2a01691a87fedbe4aa6de6f1c0c0f3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePixelUI/artwork/icons/icons_color_customizible.png using Guid(2a01691a87fedbe4aa6de6f1c0c0f3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d53ace9989c8d954d2cc4cfbe174a2') in 0.076530 seconds
+  Import took 0.079400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.299237 seconds.
+  path: Assets/Space Threat (Action Cinematic Music)
+  artifactKey: Guid(6ff293c195054e241a75d38c9eb30d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Space Threat (Action Cinematic Music) using Guid(6ff293c195054e241a75d38c9eb30d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e1e341aab8b8606c66a38b25195fad') in 0.005760 seconds
+  Import took 0.008762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059802 seconds.
+  path: Assets/Space Threat (Action Cinematic Music)/Space Threat  (Slow Ambient Version).wav
+  artifactKey: Guid(ab6a92ee3bea3f34caa9aa378465db46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Space Threat (Action Cinematic Music)/Space Threat  (Slow Ambient Version).wav using Guid(ab6a92ee3bea3f34caa9aa378465db46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae118f47dd94fdaa489301a2f9923c2') in 0.080921 seconds
+  Import took 0.083706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Space Threat (Action Cinematic Music)/Space Threat (Energetic Powerful Version).wav
+  artifactKey: Guid(05ed336e3b62a1344bb61448bba1be2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Space Threat (Action Cinematic Music)/Space Threat (Energetic Powerful Version).wav using Guid(05ed336e3b62a1344bb61448bba1be2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb038d7e8af089fefd7167ee8059f2b') in 0.026131 seconds
+  Import took 0.028910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Space Threat (Action Cinematic Music)/Space Threat (Electronic Dramatic Version, Looped).wav
+  artifactKey: Guid(cbcff4ab684a89343a147a88a9a3b886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Space Threat (Action Cinematic Music)/Space Threat (Electronic Dramatic Version, Looped).wav using Guid(cbcff4ab684a89343a147a88a9a3b886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a5697d575a601a094cd012f8b782eb') in 0.027389 seconds
+  Import took 0.029952 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000206 seconds.
-  path: Assets/fg.png
-  artifactKey: Guid(ccca52a9e090136438665a9a7ec31454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fg.png using Guid(ccca52a9e090136438665a9a7ec31454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a700894daee3ea6d5bcf5484136368') in 0.008700 seconds
-  Import took 0.026273 seconds .
+  path: Assets/Space Threat (Action Cinematic Music)/Space Threat (Energetic Powerful Version, Looped).wav
+  artifactKey: Guid(adaf7c0db5d9ccd41989ede5cb42efcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Space Threat (Action Cinematic Music)/Space Threat (Energetic Powerful Version, Looped).wav using Guid(adaf7c0db5d9ccd41989ede5cb42efcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046ec129840a7a724f7c64169b67bfc4') in 0.023249 seconds
+  Import took 0.025769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Space Threat (Action Cinematic Music)/Space Threat  (Slow Ambient Version, Looped).wav
+  artifactKey: Guid(577c67b371a55324690ff8d3cd7bc258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Space Threat (Action Cinematic Music)/Space Threat  (Slow Ambient Version, Looped).wav using Guid(577c67b371a55324690ff8d3cd7bc258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8679ab1a520c24c14f358147f3d5de20') in 0.019512 seconds
+  Import took 0.022420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Space Threat (Action Cinematic Music)/Space Threat (Electronic Dramatic Version).wav
+  artifactKey: Guid(fcebeb04ef548ee43bcc1ea2faa2caad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Space Threat (Action Cinematic Music)/Space Threat (Electronic Dramatic Version).wav using Guid(fcebeb04ef548ee43bcc1ea2faa2caad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0beb857f1a55848d12be2bc9e66b0fcc') in 0.017786 seconds
+  Import took 0.021066 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
